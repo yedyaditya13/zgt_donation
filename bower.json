@@ -1,0 +1,26 @@
+{
+  "name": "zerogadget",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "yedyaditya <yedyaditya@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "http://",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "datatables.net-bs": "^2.1.1",
+    "font-awesome": "^4.7.0",
+    "fontawesome": "Font-Awesome#^5.13.0",
+    "jquery-migrate": "3.0.0",
+    "jquery-ui": "1.12.1",
+    "jquery": "^3.5.1"
+  }
+}
