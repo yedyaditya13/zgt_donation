@@ -28,5 +28,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    
+    <!-- Style CSS For Form Donation -->
+    <link rel="stylesheet" href="../dist/css/main.css">
+
+
+
 </head>

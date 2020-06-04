@@ -86,8 +86,8 @@
             <!-- Donation Request -->
             <div class="container" style="margin-top: 30px;">
                 <div class="row justify-content-center">
-                    <div class="col-lg-3">
-                        <a href="donation_now.php" class="btn btn-info btn-lg donationNow">
+                    <div class="col-lg-4">
+                        <a href="donation_now.php" class="btn btn-info btn-md donationNow">
                                 <span>Ayo, Donasi Sekarang</span>
                             </a>
                     </div>
