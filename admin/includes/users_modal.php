@@ -1,3 +1,6 @@
+<!-- Users Modals -->
+<!-- =============================================================================================== -->
+
 <!-- Activate User -->
 <div class="modal fade" id="activate">
     <div class="modal-dialog">
@@ -196,6 +199,13 @@
     </div>
 </div>
 
+<!-- END Users Modals -->
+<!-- =============================================================================================== -->
+
+
+
+<!-- Donation Modals -->
+<!-- =============================================================================================== -->
 
 <!-- Donation Confirm Payment -->
 <div class="modal fade" id="confirm">
@@ -252,3 +262,62 @@
         </div>
     </div>
 </div>
+
+<!-- !-- Add New User--> 
+<div class="modal fade" id="addNewDonation">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title"><b>Add New Donation</b></h4>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal" method="POST" action="donation_add.php" enctype="multipart/form-data">
+                <!-- <div class="form-group">
+                    <label for="firstname" class="col-sm-3 control-label">Firstname</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="firstname" name="firstname" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-sm-3 control-label">Lastname</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="lastname" name="lastname" required>
+                    </div>
+                </div> -->
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+
+                    <div class="col-sm-9">
+                      <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="contact" class="col-sm-3 control-label">Contact</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="contact" name="contact">
+                    </div>
+                </div> -->
+                <div class="form-group">
+                    <label for="contact" class="col-sm-3 control-label">Nominal</label>
+
+                    <div class="col-sm-9">
+                      <input type="number" class="form-control" id="nominal" name="nominal">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
+              <button type="submit" class="btn btn-primary btn-flat" name="addDonation"><i class="fa fa-save"></i> Save</button>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- END Donation Modals -->
+<!-- =============================================================================================== -->
