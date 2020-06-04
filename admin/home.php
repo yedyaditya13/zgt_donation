@@ -92,9 +92,10 @@
                         <div class="inner">
                             <?php 
                                 $conn = $pdo->open();
+                                $sts_trx = 1;
                                             
-                                $stmt = $conn->prepare("SELECT SUM(nominal) as total FROM transaction");
-                                $stmt->execute();
+                                $stmt = $conn->prepare("SELECT SUM(nominal) as total FROM transaction JOIN detail_transaction ON transaction.id=detail_transaction.id_transaction WHERE detail_transaction.status_trx=:status_trx");
+                                $stmt->execute(['status_trx' => $sts_trx]);
                                 $row = $stmt->fetch();
                                             
                                 echo "

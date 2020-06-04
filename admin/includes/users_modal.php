@@ -274,34 +274,13 @@
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="donation_add.php" enctype="multipart/form-data">
-                <!-- <div class="form-group">
-                    <label for="firstname" class="col-sm-3 control-label">Firstname</label>
-
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="firstname" name="firstname" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="lastname" class="col-sm-3 control-label">Lastname</label>
-
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="lastname" name="lastname" required>
-                    </div>
-                </div> -->
                 <div class="form-group">
                     <label for="email" class="col-sm-3 control-label">Email</label>
 
                     <div class="col-sm-9">
-                      <input type="email" class="form-control" id="email" name="email" required>
+                      <input type="email" class="form-control" id="email_user" name="email" required>
                     </div>
                 </div>
-                <!-- <div class="form-group">
-                    <label for="contact" class="col-sm-3 control-label">Contact</label>
-
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="contact" name="contact">
-                    </div>
-                </div> -->
                 <div class="form-group">
                     <label for="contact" class="col-sm-3 control-label">Nominal</label>
 

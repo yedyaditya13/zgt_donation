@@ -143,16 +143,18 @@
                                         <th rowspan="2" style="border: none;">Total</th>
                                         <th rowspan="2" style="border: none;"></th>
                                         <th rowspan="2" style="border: none;"></th>
+                                        <th rowspan="2" style="border: none;"></th>
                                         <th rowspan="2"></th> 
                                         <!-- <th rowspan="2" style="border: none;"></th> -->   
                                     </tr>
                                     <tr>
                                         <?php 
                                             $conn = $pdo->open();
-                                            
+                                            $sts_trx = 1;
+
                                             try{
-                                                $stmt = $conn->prepare("SELECT SUM(nominal) as total FROM detail_transaction as d JOIN users as u on u.id=d.id_user JOIN transaction as t ON t.id = d.id_transaction WHERE id_user=:id_user ");
-                                                $stmt->execute(['id_user' => $user['id']]);
+                                                $stmt = $conn->prepare("SELECT SUM(nominal) as total FROM transaction JOIN detail_transaction ON transaction.id=detail_transaction.id_transaction WHERE detail_transaction.status_trx=:status_trx and id_user=:id");
+                                                $stmt->execute(['status_trx' => $sts_trx, 'id'=>$_GET['user']]);
                                                 $row = $stmt->fetch();
                                                 
                                                 echo "
