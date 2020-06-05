@@ -13,7 +13,7 @@
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" method="POST" action="users_activate.php">
-                    <input type="hidden" class="userid" name="id">
+                    <input type="true" class="userid" name="id">
                         <div class="text-center">
                             <p>ACTIVATE USER</p>
                             <h2 class="bold fullname"></h2>
@@ -41,7 +41,7 @@
             </div>
             <div class="modal-body">
                 <form action="users_delete.php" method="POST" class="form-horizontal">
-                    <input type="hidden" class="userid" name="id">
+                    <input type="true" class="userid" name="id">
                         <div class="text-center">
                             <p>DELETE USER ?</p>
                             <h2 class="bold fullname"></h2>
@@ -219,7 +219,7 @@
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" method="POST" action="donation_confirmed.php">
-                    <input type="hidden" class="userid" name="id">
+                    <input type="true" class="userid" name="id">
                         <div class="text-center">
                             <p>CONFIRM USER PAYMENT</p>
                             <h2 class="bold fullname"></h2>
@@ -263,7 +263,7 @@
     </div>
 </div>
 
-<!-- !-- Add New User--> 
+<!-- !-- Add New Donation --> 
 <div class="modal fade" id="addNewDonation">
     <div class="modal-dialog">
         <div class="modal-content">

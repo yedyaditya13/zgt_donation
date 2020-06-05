@@ -37,7 +37,7 @@
                     Swal.fire({
                             position: "top",
                             icon: "success",
-                            title: "Yeeaay, Berhasil Register",
+                            title: "Yeeaay, Berhasil Register! Silahkan cek email anda untuk aktivasi",
                             showConfirmButton: false,
                             timer: 3000
                     });';
