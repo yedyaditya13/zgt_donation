@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<title>Ecommerce Site using PHP</title>
+  	<title>ZeroGadget</title>
   	<!-- Tell the browser to be responsive to screen width -->
   	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport">
   	
@@ -30,6 +30,9 @@
 
   	<!-- Google Font -->
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    
+    <!-- Button Export -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
 
 
   	<style type="text/css">
@@ -72,6 +75,16 @@
 
       h3.title_card {
         font-size:22px;
+      }
+
+      /* Position button export */
+      .dataTables_wrapper .dt-buttons {
+        /* left: 75%; */
+        position: absolute;
+      }
+
+      .dt-buttons {
+          font-size: 12px;
       }
   	</style>
 </head>
