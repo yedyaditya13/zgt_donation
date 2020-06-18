@@ -120,7 +120,7 @@
                                                 <td>".$row['created_on']."</td>
                                                 <td>".$date."</td>
                                                 <td>".$generate_code."</td>
-                                                <td>".$row['nominal']."</td>
+                                                <td>RP ".number_format($row['nominal'], 2, ',', '.')."</td>
                                                 <td>
                                                     ".$status."
                                                     ".$confirm."

@@ -100,7 +100,7 @@
                                                     <td>".$row['created_on']."</td>
                                                     <td>".$date."</td>
                                                     <td>".$generate_code."</td>
-                                                    <td>".$row['nominal']."</td>
+                                                    <td>RP ".number_format($row['nominal'], 2, ',', '.')."</td>
                                                     <td>
                                                         ".$status."
                                                         ".$confirm."
@@ -119,46 +119,6 @@
                                         $pdo->close();
                                     ?>
 
-                                    <!-- <tr>
-                                        <th rowspan="2">No</th>
-                                        <th rowspan="2">Nama</th>
-                                        <th colspan="2">Tanggal</th>
-                                        <th colspan="2">Bulan</th>
-                                        <th rowspan="2">Total</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Jan</th>
-                                        <th>Feb</th>
-                                        <th>Mar</th>
-                                        <th>Apr</th>                                    
-                                        <th>Mei</th>
-                                        <th>Jun</th>
-                                        <th>Jul</th>
-                                        <th>Agu</th>                                    
-                                        <th>Sep</th>
-                                        <th>Okt</th>
-                                        <th>Nov</th>
-                                        <th>Des</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Dita</td>
-                                        <td>25000</td>
-                                        <td>25000</td>
-                                        <td>25000</td>
-                                        <td>25000</td>
-                                        <td>25000</td>
-                                        <td>25000</td>
-                                        <td>25000</td>
-                                        <td>25000</td>
-                                        <td>25000</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>350,0000</td>
-                                    </tr> -->
                                 </tbody>
                                 <tfoot>
                                     <tr>
