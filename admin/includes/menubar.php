@@ -19,6 +19,7 @@
             <li><a href="donation_all_user.php"><i class="fa fa-money"></i> <span>Donation</span></a></li>
             <li class="header">MANAGE</li>
             <li><a href="users.php"><i class="fa fa-users"></i> <span>Users</span></a></li>
+            <li><a href="internal.php"><i class="fa fa-user"></i> <span>Internal</span></a></li>
             <!-- <li class="treeview">
                 <a href="#">
                     <i class="fa fa-barcode"></i>

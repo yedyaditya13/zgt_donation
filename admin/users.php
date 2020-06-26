@@ -60,6 +60,7 @@
                                     <th>Address</th>
                                     <th>Contact Info</th>
                                     <th>Status</th>
+                                    <th>is_internal</th>
                                     <th>Date Added</th>
                                     <th>Action</th>
                                 </thead>
@@ -75,6 +76,9 @@
                                                 $image = (!empty($row['image'])) ? '../images/'.$row['image'] : '../includes/images/profile.jpg';
                                                 $status = ($row['status']) ? '<span class="label label-success">active</span>' : '<span class="label label-danger">not verified</span>';
                                                 $active = (!$row['status']) ? '<span class="pull-right"><a href="#activate" class="status" data-toggle="modal" data-id="'.$row['id'].'"><i class="fa fa-check-square-o"></i></a></span>' : '';
+                                                $is_internal = ($row['is_internal'] == 1) ? '<span class="label label-success">internal</span>' : '<span class="label label-danger">not internal</span>';
+                                                $active_internal = (!$row['is_internal']) ? '<span class="pull-right"><a href="#activate_internal" class="status" data-toggle="modal" data-id="'.$row['id'].'"><i class="fa fa-check-square-o"></i></a></span>' : '';
+
                                                 echo "
                                                 <tr>
                                                     <td>".$index++."</td>
@@ -89,6 +93,10 @@
                                                     <td>
                                                         ".$status."
                                                         ".$active."
+                                                    </td>
+                                                    <td>
+                                                        ".$is_internal."
+                                                        ".$active_internal."
                                                     </td>
                                                     <td>".date('M d, Y', strtotime($row['created_on']))."</td>
                                                     <td>
