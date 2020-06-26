@@ -138,7 +138,7 @@
                         <div class="icon">
                             <i class="fa fa-binoculars"></i>
                         </div>
-                        <a href="internal.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="internal_all.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             <!-- ./col -->
